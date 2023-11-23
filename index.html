@@ -4,81 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>ApolloX</title>
+    <script src="common_importer.js"></script>
     <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 1em;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 1em;
-            margin: 0 1em;
-        }
-
-        section {
-            padding: 2em;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
         .profile-image {
-            border-radius: 50%; /* Add rounded corners for a circular image */
-            max-width: 100%;
+            border-radius: 30%;
+            width: 100px; /* Set the maximum width of the image */
             height: auto;
-            margin-bottom: 1em; /* Add some spacing below the image */
+            margin-right: 1em; /* Add space between the image and text */
+        }
+
+        .align-text {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+            text-align: left; /* Align text to the left */
         }
     </style>
 </head>
 
-<body>
-    <header>
-        <img src="Resources/profile_picture.png" alt="ApolloX" class="profile-image">
-        <h1>ApolloX Blog</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#blog">Blog</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
+<body>        
     <section>
-        <h2>Welcome to ApolloX!</h2>
-        <p>This is the home page of your website. You can customize this section to introduce yourself, provide an overview of your projects, or share the latest updates.</p>
+        <div class="align-text">
+            <img src="Resources/profile_picture.png" alt="ApolloX" class="profile-image">
+            <h2>Welcome to ApolloX!</h2>
+        </div>
+        <h3 style="text-align: center;">Welcome to my personal blog!</h2>
+        <p style="text-align: center;">My own little spot on the internet to share idéas and discoveries on.</p>
     </section>
 
     <!-- Add more sections for blog posts, project highlights, etc. -->
-
-    <footer>
-        <p>&copy; 2023 ApolloX. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
