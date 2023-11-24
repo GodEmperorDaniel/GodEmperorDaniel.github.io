@@ -10,16 +10,54 @@
     <style>
         .profile-image {
             border-radius: 30%;
-            width: 100px; /* Set the maximum width of the image */
+            width: 200px; /* Set the maximum width of the image */
             height: auto;
             margin-right: 1em; /* Add space between the image and text */
         }
 
         .align-text {
             display: flex;
-            align-items: center; /* Center items vertically */
-            justify-content: center; /* Center items horizontally */
-            text-align: left; /* Align text to the left */
+        }
+
+        .left, .right {
+            flex: 1;
+        }
+
+        .center {
+            margin: auto;
+        }
+
+        h3 {
+            text-align: center; 
+            margin-top: -5%;
+        }
+
+        p {
+            text-align: center; 
+            margin-top: 2em;
+        }
+
+        @media (max-width: 600px) {
+    
+            .profile-image {
+                width: 75px;
+            }
+
+            .align-text {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            h3 {
+                text-align: center; 
+                margin-top: 0;
+            }   
+
+            p {
+            text-align: center; 
+            margin-top: 0;
+            }
         }
     </style>
 </head>
@@ -27,11 +65,16 @@
 <body>        
     <section>
         <div class="align-text">
-            <img src="Resources/profile_picture.png" alt="ApolloX" class="profile-image">
-            <h2>Welcome to ApolloX!</h2>
+            <div class="left">
+                <img src="Resources/profile_picture.png" alt="ApolloX" class="profile-image">
+            </div>
+            <div class="center">
+                <h2>Welcome to ApolloX!</h2>
+            </div>
+            <div class="right"></div>
         </div>
-        <h3 style="text-align: center;">Welcome to my personal blog!</h2>
-        <p style="text-align: center;">My own little spot on the internet to share idéas and discoveries on.</p>
+        <h3>My own little spot on the internet</h2>
+        <p>Here I share idéas and discoveries on game and software development.</p>
     </section>
 
     <!-- Add more sections for blog posts, project highlights, etc. -->

@@ -15,9 +15,10 @@ header {
 
 nav {
     background-color: #444;
-    padding: 1em;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -35,8 +36,32 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+    font-size: smaller;
     padding: 1em;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 0.5em; /* Adjust padding for smaller screens */
+    }
+
+    nav {
+        flex-direction: row; /* Stack nav items vertically on smaller screens */
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5em 0; /* Add spacing between nav items on smaller screens */
+    }
+
+    section {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    footer {
+        padding: 0.25em; /* Adjust padding for smaller screens */
+    }
 }
