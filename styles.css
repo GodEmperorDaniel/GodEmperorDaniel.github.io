@@ -37,10 +37,14 @@ footer {
     color: #fff;
     text-align: center;
     font-size: smaller;
-    padding: 1em;
+    padding: 0.5em;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    margin: 1em;
 }
 
 @media (max-width: 600px) {
@@ -61,7 +65,15 @@ footer {
         padding: 1em; /* Adjust padding for smaller screens */
     }
 
+    hr.solid {
+        border-top: 3px solid #bbb;
+    }
+
     footer {
         padding: 0.25em; /* Adjust padding for smaller screens */
+    }
+
+    footer p {
+        margin: 0.45em;
     }
 }
