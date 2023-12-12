@@ -1,0 +1,114 @@
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+section {
+    padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: smaller;
+    padding: 0.5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 1em;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project iframe {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+}
+
+.project h3 {
+    margin-top: 10px; /* Adjust the margin to keep the title within the border */
+}
+
+/* Additional styling as needed */
+
+
+@media (max-width: 600px) {
+    body {
+        min-height: 100vh; /* Set a minimum height of the viewport */
+        margin: 0;
+    }
+
+    header {
+        padding: 0.5em; /* Adjust padding for smaller screens */
+    }
+
+    nav {
+        flex-direction: row; /* Stack nav items vertically on smaller screens */
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5em 0; /* Add spacing between nav items on smaller screens */
+    }
+
+    section {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    hr.solid {
+        border-top: 3px solid #bbb;
+    }
+
+    footer {
+        padding: 0.25em; /* Adjust padding for smaller screens */
+    }
+
+    footer p {
+        margin: 0.45em;
+    }
+}

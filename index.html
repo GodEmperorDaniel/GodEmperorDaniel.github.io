@@ -4,73 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>ApolloX</title>
+    <script src="common_importer.js" id="importer" data-url="common.html"></script>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
+        .profile-image {
+            border-radius: 30%;
+            width: 200px; /* Set the maximum width of the image */
+            height: auto;
+            margin-right: 1em; /* Add space between the image and text */
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
+        .align-text {
+            display: flex;
         }
 
-        nav {
-            background-color: #444;
-            padding: 1em;
-            text-align: center;
+        .left, .right {
+            flex: 1;
         }
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 1em;
-            margin: 0 1em;
+        .center {
+            margin: auto;
         }
 
-        section {
-            padding: 2em;
+        h3 {
+            text-align: center; 
+            margin-top: -4%;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        p {
+            text-align: center; 
+            margin-top: 5%;
+        }
+
+        @media (max-width: 800px) {
+    
+            .profile-image {
+                width: 75px;
+            }
+
+            .align-text {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+
+            h3 {
+                text-align: center; 
+                margin-top: 0;
+            }   
+
+            p {
+            text-align: center; 
+            margin-top: 0;
+            }
         }
     </style>
 </head>
 
-<body>
-    <header>
-        <h1>Your Website Name</h1>
-    </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#blog">Blog</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
+<body>        
     <section>
-        <h2>Welcome to Your Website!</h2>
-        <p>This is the home page of your website. You can customize this section to introduce yourself, provide an overview of your projects, or share the latest updates.</p>
+        <div class="align-text">
+            <div class="left">
+                <img src="resources/profile_picture.png" alt="ApolloX" class="profile-image">
+            </div>
+            <div class="center">
+                <h2>Welcome to ApolloX!</h2>
+            </div>
+            <div class="right"></div>
+        </div>
+        <h3>My own little spot on the internet</h3>
+        <p>Here I share idéas and discoveries on game and software development.</p>
+        <p style="margin-top: 0.5em;">Hope you find what you're looking for here.</p>
     </section>
 
     <!-- Add more sections for blog posts, project highlights, etc. -->
-
-    <footer>
-        <p>&copy; 2023 Your Website Name. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
