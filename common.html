@@ -9,13 +9,25 @@
 
 <body>
     <header>
-        <a href="index.html" style="text-decoration: none; color: inherit;">
-            <h1>ApolloX Blog</h1>
-        </a>
-    
+        <div class="align-text-header">
+            <div class="header-left"></div>
+            <div class="header-center">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <h1>ApolloX Blog</h1>
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="tgl-container">
+                    <input class="tgl tgl-flip" id="dark-mode-toggle" type="checkbox"/>
+                    <label class="tgl-btn" data-tg-off="Light" data-tg-on="Dark" for="dark-mode-toggle"></label>
+                </div>
+            </div>
+        </div>
+
+        
         <nav>
             <a href="index.html">Home</a>
-            <a href="blog/post-template.html">Blog</a>
+            <a href="blog.html">Blog</a>
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -25,6 +37,7 @@
         <p>Trinkets & Baubles for Game Development</p>
         <p>&copy; 2023 ApolloX. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
