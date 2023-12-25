@@ -7,14 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="common_importer.js" id="importer" data-url="common.html"></script>
+    <script src="tag_filter.js" id="tag_filter"></script>
     <title>Your Blog Title</title>
 </head>
 
 <body>
-    <section class="blog-post">
+    <section class="blog-post" data-tags="tag1 tag2">
         <h2>Title of the Blog Post</h2>
         <p class="date">Publication Date: [Date]</p>
-        
+        <ul class="tags">
+            <li><a href="#" class="active" data-tag="all">All</a></li>
+            <li><a href="#" data-tag="tag1">Tag1</a></li>
+            <li><a href="#" data-tag="tag2">Tag2</a></li>
+            <!-- Add more tags as needed -->
+        </ul>
+
+
         <!-- Content of your blog post goes here -->
 
         <p><a href="index.html">Back to Home</a></p>

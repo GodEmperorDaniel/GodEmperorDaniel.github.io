@@ -7,21 +7,41 @@
     <link rel="stylesheet" href="styles.css">
     <title>ApolloX</title>
     <script src="common_importer.js" id="importer" data-url="common.html"></script>
+    <script src="dark_mode.js"></script>
 </head>
 
 <body>
     <h1 style="text-align: center;">Blog posts</h1>
+
+    <!-- Tags section -->
+    <h2 style="margin-left: 1em;">Tags</h2>
+    <div class="tags">
+        <a href="#" class="active">All</a>
+        <a href="#">Shader</a>
+        <a href="#">VFX</a>
+        <a href="#">Godot</a>
+        <a href="#">Unreal</a>
+        <a href="#">Unity</a>
+        <!-- Add more tags as needed -->
+    </div>
+
     <section class="blog-grid">
         <a href="blog/post-template.html">
-            <div class="project">
+            <div class="blog" data-tags="shader godot">
                 <h3>Procedural Grid Shader</h3>
                 <img src="resources/procedural_grid_showcase.png" alt="Procedural grid shader img">
             </div>
         </a>
         <a href="blog/post-template.html">
-            <div class="project">
+            <div class="blog" data-tags="shader">
                 <h3>Stylized Grass Shader</h3>
                 <img src="resources/grass_shader.jpg" alt="Stylized grass shader img">
+            </div>
+        </a>
+        <a href="blog/post-template.html">
+            <div class="blog" data-tags="vfx">
+                <h3>Test Project Grid Element</h3>
+                <img src="resources/profile_picture.png" alt="test blog">
             </div>
         </a>
     </section>
