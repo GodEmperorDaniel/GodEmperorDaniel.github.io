@@ -13,23 +13,27 @@
         .custom-links {
             margin-bottom: 10px;
             text-decoration: none; /* Remove default underline */
-            color: #000000; /* GitHub link color */
+            color: var(--text-light); /* GitHub link color */
             display: flex; /* Use flexbox for layout control */
             align-items: center; /* Center items vertically */
         }
 
-        i {
+        body.dark-mode .custom-links {
+            color: var(--text-dark); 
+        }
+
+        .custom-links i {
             margin-right: 10px; /* Add spacing between icon and text */
             font-size: 20px; /* Adjust the icon size */
         }
 
         @media (max-width: 800px) {
-            div {
+            .customdiv {
                 display: flex;
                 flex-direction: column;
             }
 
-            div i {
+            .customdiv i {
                 display: flex;
                 align-content: center;
                 margin-right: 10px; /* Add spacing between icon and text */
@@ -54,7 +58,7 @@
         <hr class="solid">
 
         <h2>Contact Information</h2>
-        <div>
+        <div class=".customdiv">
             <a class="custom-links" href="https://github.com/godemperordaniel" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github"></i>- Github
             </a>
@@ -73,9 +77,12 @@
         
         <h2>Resume</h2>
 
-        <!-- Add your resume content here -->
+        <h3>Piktiv 2022 - Present</h3>
+        <p>
+            At Piktiv I'm working as a game development consultant, during this time I've primarily been involved with the porting and releasing Goat Simulator 3 on mobile.  
+        </p>
 
-        <hr class="solid">
+        <!-- Add your resume content here -->
     </section>
 
     <!-- ... (existing content) ... -->
