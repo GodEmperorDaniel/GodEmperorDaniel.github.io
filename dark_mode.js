@@ -21,9 +21,9 @@ function initializeDarkModeToggle(darkModeToggle) {
 
     // Set initial dark mode state
     if (isDarkMode) {
-        enableDarkMode();
+        enableDarkMode(darkModeToggle);
     } else {
-        disableDarkMode();
+        disableDarkMode(darkModeToggle);
     }
 
     // Initialize the checkbox showing correct state
@@ -32,19 +32,21 @@ function initializeDarkModeToggle(darkModeToggle) {
     // Toggle dark mode on button click
     darkModeToggle.addEventListener('click', function () {
         if (body.classList.contains('dark-mode')) {
-            disableDarkMode();
+            disableDarkMode(darkModeToggle);
         } else {
-            enableDarkMode();
+            enableDarkMode(darkModeToggle);
         }
     });
 
-    function enableDarkMode() {
+    function enableDarkMode(darkModeToggle) {
         body.classList.add('dark-mode');
+        darkModeToggle.className = "fa-solid fa-sun"; 
         localStorage.setItem('darkMode', 'true');
     }
 
-    function disableDarkMode() {
+    function disableDarkMode(darkModeToggle) {
         body.classList.remove('dark-mode');
+        darkModeToggle.className = "fa-solid fa-moon";
         localStorage.setItem('darkMode', 'false');
     }
 }
