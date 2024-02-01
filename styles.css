@@ -175,19 +175,22 @@ footer p {
 
 .tags {
     list-style: none;
-    padding: 1em;
     margin: 0;
-}
-
-.tags li {
-    display: inline-block;
-    margin-right: 10px;
 }
 
 .tags a {
     text-decoration: none;
     background-color: #eee;
     padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.blog-post-tag {
+    text-decoration: none;
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
     border-radius: 5px;
     color: #333;
 }
