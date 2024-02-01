@@ -160,7 +160,7 @@ footer p {
 
 .blog img {
     max-width: 100%;
-    height: auto;
+    height: auto;margin-bottom: -.5em;
 }
 
 .blog iframe {
