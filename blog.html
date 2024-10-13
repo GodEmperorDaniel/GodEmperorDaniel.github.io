@@ -17,8 +17,8 @@
 
     <!-- Tags section -->
     <h2 style="margin-left: 1em;">Tags</h2>
-    <div class="tags">
-        <a href="#" class="active">All</a>
+    <div style="padding-left: 1em;" class="tags">
+        <a href="#" class="active" id="all">All</a>
         <a href="#">Shader</a>
         <a href="#">VFX</a>
         <a href="#">Godot</a>
@@ -28,16 +28,23 @@
     </div>
 
     <section class="blog-grid">
-        <a href="blog/post-template.html">
+        <a style="text-decoration: none;" href="blog/post-template.html">
             <div class="blog" data-tags="shader godot">
                 <h3>Procedural Grid Shader [Soon]</h3>
                 <img src="resources/procedural_grid_showcase.png" alt="Procedural grid shader img">
+                    <div style="display: flex; justify-content: center; padding-top: .5em; margin-bottom: -.5em;" class="tags">
+                        <p class="blog-post-tag">Shader</p>
+                        <p class="blog-post-tag">Godot</p>
+                    </div>
             </div>
         </a>
-        <a href="blog/post-template.html">
+        <a style="text-decoration: none;" href="blog/post-template.html">
             <div class="blog" data-tags="shader">
                 <h3>Stylized Grass Shader [Soon]</h3>
                 <img src="resources/grass_shader.jpg" alt="Stylized grass shader img">
+                <div style="display: flex; justify-content: center; padding-top: .5em; margin-bottom: -.5em;" class="tags">
+                    <p class="blog-post-tag">Shader</p>
+                </div>
             </div>
         </a>
         <!-- <a href="blog/post-template.html">
