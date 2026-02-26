@@ -1,9 +1,9 @@
 {
-  "scanDirectories": "posts,spec",
+  "scanDirectories": "spec,posts",
   "ignoreUnderscoreFiles": false,
   "enableMDXSupport": false,
   "keywordProperty": "",
-  "descriptionProperty": "description",
+  "descriptionProperty": "",
   "titleProperty": "title",
   "useFilenameAsTitle": false,
   "slugProperty": "",

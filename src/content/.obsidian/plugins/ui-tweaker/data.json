@@ -126,7 +126,7 @@
     },
     {
       "id": "plugin-obsidian-git-status;1",
-      "name": "Git is ready",
+      "name": "Checking repository status...",
       "type": "existing",
       "hidden": false,
       "mdOnly": false
