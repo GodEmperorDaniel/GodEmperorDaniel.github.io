@@ -1,19 +1,20 @@
 {
-  "projectRoot": "/home/hecate/Projects/apollox",
-  "configFilePath": "/home/hecate/Projects/apollox/src/config.ts",
+  "projectRoot": "/home/hecate/Projects/GodEmperorDaniel.github.io",
+  "configFilePath": "/home/hecate/Projects/GodEmperorDaniel.github.io/astro.config.mjs",
   "contentTypes": [
-    {
-      "id": "content-type-1771672956595-39dw0a3t6",
-      "name": "Posts",
-      "folder": "posts",
-      "fileOrganization": "folder",
-      "enabled": true,
-      "indexFileName": "index"
-    },
     {
       "id": "content-type-1771672956595-d6k7lzjn4",
       "name": "Pages",
       "folder": "spec",
+      "fileOrganization": "folder",
+      "enabled": true,
+      "indexFileName": "index",
+      "linkBasePath": "/"
+    },
+    {
+      "id": "content-type-1771672956595-39dw0a3t6",
+      "name": "Posts",
+      "folder": "posts",
       "fileOrganization": "file",
       "enabled": true,
       "indexFileName": "index",
@@ -232,7 +233,7 @@
   "explorerFocus": {},
   "ignoreConfig": {
     "gitIgnoreConfigured": true,
-    "viteIgnoreConfigured": false
+    "viteIgnoreConfigured": true
   },
   "gitConfig": {
     "enabled": false,
@@ -242,5 +243,6 @@
   },
   "runWizardOnStartup": false,
   "wizardCompleted": true,
-  "enableMdxSupport": false
+  "enableMdxSupport": false,
+  "defaultContentTypeId": "content-type-1771672956595-39dw0a3t6"
 }
